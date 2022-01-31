@@ -1,0 +1,54 @@
+<app-header></app-header>
+<div class="container">
+    <h1 class="mt-2"> <strong>Bienvenido al Sistema Web SNGR</strong></h1>
+    <div class="row mt-5 d-flex justify-content-center">
+        <div *ngIf="isAdmin === 'ADMIN'" class="col-md-4 card-group">
+
+            <div class="card">
+                <div class="card-header h4 text-center">
+                    <strong>Usuarios</strong>
+                </div>
+                <img class="card-img-top mx-auto mt-3" style="width: 100px; height: 100px;"
+                    src="https://image.flaticon.com/icons/png/512/1462/1462456.png" alt="Card image cap">
+                <div class="card-body">
+                  
+                </div>
+                <div class="card-footer">
+                    <a [routerLink]="['/bodegueros']" class="btn btn-primary btn-block"> <strong>Ingresar</strong></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-4 card-group">
+            <div class="card">
+                <div class="card-header h4 text-center">
+                    <strong>Técnicos</strong>
+                </div>
+                <img class="card-img-top mx-auto mt-3" style="width: 100px; height: 100px;"
+                    src="https://c8.alamy.com/compes/2ddme36/salud-transporte-medico-ambulancia-linea-de-emergencia-y-llenar-vector-ilustracion-2ddme36.jpg"
+                    alt="Card image cap">
+                <div class="card-body">
+                   
+                </div>
+                <div class="card-footer">
+                    <a [routerLink]="['/productos']" class="btn btn-primary btn-block"><strong>Ingresar</strong></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 card-group">
+            <div class="card">
+                <div class="card-header h4 text-center">
+                    <strong>Unidades de Respuesta</strong>
+                </div>
+                <img class="card-img-top mx-auto mt-3" style="width: 100px; height: 100px;"
+                    src="https://w7.pngwing.com/pngs/74/876/png-transparent-business-logo-handshake-symbol-business-text-hand-people.png" alt="Card image cap">
+                <div class="card-body">
+                  
+                </div>
+                <div class="card-footer">
+                    <a [routerLink]="['/ajustes']" class="btn btn-primary btn-block"><strong>Ingresar</strong></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
